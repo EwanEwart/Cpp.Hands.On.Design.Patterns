@@ -1,5 +1,5 @@
 // #!/bin/sh
-// 
+//
 // md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
 // script="/tmp/`uuid`"
 // script="/tmp/$(basename $0).${md5}"
@@ -20,7 +20,7 @@ T Max(T x, T y) { return (x > y) ? x : y; }
 
 int main(int argc, char const *argv[])
 {
-  auto x = Max(7L, 11); // types cannot be deduced
+  auto x = Max(7L, 11L); // types cannot be deduced
 
   return 0;
 }
