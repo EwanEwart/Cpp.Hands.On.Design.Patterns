@@ -1,5 +1,5 @@
 // #!/bin/sh
-// 
+//
 // md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
 // script="/tmp/`uuid`"
 // script="/tmp/$(basename $0).${md5}"
@@ -59,7 +59,8 @@ int main(int argc, char const *argv[])
   cout << swap12(p) << endl;
 
   // Another C++17 feature: class template argument deduction
-  std::tuple t1 {42, 'a', 4.2, "Kate"};
+  std::tuple<int, char, float, char *const> t1{42, 'a', 4.2, "Kate"};
+  // std::tuple t1{42, 'a', 4.2f, "Kate"};
   auto t2 = std::make_tuple("Ewan", 3.1415F, 'b', 4.2, 2.17f, std::bitset<16>(4711));
   cout << t1 << endl;
   cout << t2 << endl;
