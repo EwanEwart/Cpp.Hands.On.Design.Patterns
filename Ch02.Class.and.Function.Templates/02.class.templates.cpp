@@ -1,13 +1,13 @@
-#!/bin/sh
-
-md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
-script="/tmp/`uuid`"
-script="/tmp/$(basename $0).${md5}"
-cxx="clang++ -std=c++11 -pipe -Wall"
-cxx="g++ -std=c++17 -pipe -Wall"
-more_sources=""
-linker="-lpthread"
-[ -e "${script}" ] || ${cxx} -x c++ -o ${script} - <<INLINE ${more_sources} ${linker} && exec ${script} $@
+// #!/bin/sh
+//
+// md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
+// script="/tmp/`uuid`"
+// script="/tmp/$(basename $0).${md5}"
+// cxx="clang++ -std=c++11 -pipe -Wall"
+// cxx="g++ -std=c++17 -pipe -Wall"
+// more_sources=""
+// linker="-lpthread"
+// [ -e "${script}" ] || ${cxx} -x c++ -o ${script} - <<INLINE ${more_sources} ${linker} && exec ${script} $@
 
 #include <iostream>
 using std::cout;
