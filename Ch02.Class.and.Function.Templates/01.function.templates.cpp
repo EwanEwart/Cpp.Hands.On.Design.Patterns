@@ -18,6 +18,11 @@ auto increment(T t)
 {
   return ++t;
 }
+template <typename T>
+auto decrement(T t)
+{
+  return --t;
+}
 
 template <typename T>
 auto sum(T const &from, T const &to, T const &inc = 1)
