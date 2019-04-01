@@ -43,12 +43,19 @@ auto main(int argc, char const *argv[]) -> int
 
   cout << "n : " << n << endl;
   cout << "n++ : " << increment(n) << endl;
+  cout << "n : " << n << endl;
 
   cout << "d : " << d << endl;
   cout << "d++ : " << increment(d) << endl;
+  cout << "d : " << d << endl;
 
   cout << "c : " << '\'' << c << '\'' << endl;
   cout << "c++ : " << '\'' << increment(c) << '\'' << endl;
+  cout << "c : " << '\'' << c << '\'' << endl;
+
+  cout << "d : " << d << endl;
+  cout << "--d : " << decrement(d) << endl;
+  cout << "d : " << d << endl;
 
   cout << "-------------" << endl;
   cout << sum(1, 100) << endl;
