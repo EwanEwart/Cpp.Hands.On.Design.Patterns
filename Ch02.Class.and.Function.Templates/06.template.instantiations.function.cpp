@@ -1,5 +1,5 @@
 // #!/bin/sh
-// 
+//
 // md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
 // script="/tmp/`uuid`"
 // script="/tmp/$(basename $0).${md5}"
@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 
   cout << "6. " << half<double>(100.75) << endl;
 
-  long x = ...;
+  // long x = ...;
 
   return 0;
 }
