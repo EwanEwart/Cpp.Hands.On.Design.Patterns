@@ -1,5 +1,5 @@
 // #!/bin/sh
-// 
+//
 // md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
 // script="/tmp/`uuid`"
 // script="/tmp/$(basename $0).${md5}"
@@ -50,8 +50,8 @@ Ratio<N,D> make_ratio(N const & num, D const & denom) {
 
 int main(int argc, char const *argv[])
 {
-  auto n4711_11(Ratio(4711.5577,11));
-  auto n4711_7(Ratio(4711,7.0f));
+  auto n4711_11{Ratio{4711.5577,11}};
+  auto n4711_7{Ratio{4711,7.0f}};
 
   Ratio<int,double> r1;
   Ratio<int,double> r2(4711,7.25F);
