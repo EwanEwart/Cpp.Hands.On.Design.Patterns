@@ -20,7 +20,13 @@ T Max(T x, T y) { return (x > y) ? x : y; }
 
 int main(int argc, char const *argv[])
 {
-  auto x = Max(7L, 11L); // types cannot be deduced
+  auto a {7L};
+  auto b {11L};
+
+  auto m = Max(a, b);
+
+  cout << "Max ( " << a << ", " << b << ") == " << m << endl;
+
 
   return 0;
 }
