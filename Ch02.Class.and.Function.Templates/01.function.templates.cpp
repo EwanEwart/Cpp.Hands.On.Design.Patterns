@@ -18,6 +18,11 @@ auto increment(T t)
 {
   return ++t;
 }
+template <typename T>
+auto decrement(T t)
+{
+  return --t;
+}
 
 template <typename T>
 auto sum(T const &from, T const &to, T const &inc = 1)
@@ -37,13 +42,20 @@ auto main(int argc, char const *argv[]) -> int
   auto c('a');
 
   cout << "n : " << n << endl;
-  cout << "n++ : " << increment(n) << endl;
+  cout << "++n : " << increment(n) << endl;
+  cout << "n : " << n << endl;
 
   cout << "d : " << d << endl;
-  cout << "d++ : " << increment(d) << endl;
+  cout << "++d : " << increment(d) << endl;
+  cout << "d : " << d << endl;
 
   cout << "c : " << '\'' << c << '\'' << endl;
-  cout << "c++ : " << '\'' << increment(c) << '\'' << endl;
+  cout << "++c : " << '\'' << increment(c) << '\'' << endl;
+  cout << "c : " << '\'' << c << '\'' << endl;
+
+  cout << "d : " << d << endl;
+  cout << "--d : " << decrement(d) << endl;
+  cout << "d : " << d << endl;
 
   cout << "-------------" << endl;
   cout << sum(1, 100) << endl;
