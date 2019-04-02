@@ -1,5 +1,5 @@
 // #!/bin/sh
-// 
+//
 // md5=$( (md5 -q || md5sum -b) < $0 2>/dev/null | cut -d ' ' -f1)
 // script="/tmp/`uuid`"
 // script="/tmp/$(basename $0).${md5}"
@@ -35,7 +35,10 @@ auto sum(T1 const& t1, T const& ... t) {    // one or more arguments
 
 auto main(int argc, char const *argv[]) -> int
 {
-  cout << sum(1,2,3,4,5,6,7,8,9,10) << endl;
+  cout << sum(
+    1,2,3,4,5,6,7,8,9,10,
+    11,12,13,14,15,16,17,18,19,20
+  ) << endl;
 
   return 0;
 }
