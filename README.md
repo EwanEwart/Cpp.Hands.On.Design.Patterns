@@ -1,2 +1,2 @@
-# Cpp.Hands.On.Design.Patterns
-Cpp Hands-On Design-Patterns
+# C++.Hands.On.Design.Patterns
+C++ Hands-On Design-Patterns
